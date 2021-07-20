@@ -1,0 +1,151 @@
+{
+  "flavor": [
+    {
+      "ID": "1",
+      "Name": "m1.tiny",
+      "RAM": 512,
+      "Disk": 1,
+      "Ephemeral": 0,
+      "VCPUs": 1,
+      "Is Public": true
+    },
+    {
+      "ID": "2",
+      "Name": "m1.small",
+      "RAM": 2048,
+      "Disk": 20,
+      "Ephemeral": 0,
+      "VCPUs": 1,
+      "Is Public": true
+    },
+    {
+      "ID": "3",
+      "Name": "m1.medium",
+      "RAM": 4096,
+      "Disk": 40,
+      "Ephemeral": 0,
+      "VCPUs": 2,
+      "Is Public": true
+    },
+    {
+      "ID": "4",
+      "Name": "m1.large",
+      "RAM": 8192,
+      "Disk": 80,
+      "Ephemeral": 0,
+      "VCPUs": 4,
+      "Is Public": true
+    },
+    {
+      "ID": "5",
+      "Name": "m1.xlarge",
+      "RAM": 16384,
+      "Disk": 160,
+      "Ephemeral": 0,
+      "VCPUs": 8,
+      "Is Public": true
+    },
+    {
+      "ID": "test",
+      "Name": "test",
+      "RAM": 4096,
+      "Disk": 30,
+      "Ephemeral": 0,
+      "VCPUs": 4,
+      "Is Public": true
+    }
+  ],
+  "vm_info": [
+    {
+      "id": "17ac8035-2dc9-44ee-a227-84b94288029b",
+      "name": "test1",
+      "status": "SHUTOFF",
+      "power_state": "4",
+      "flavor": "test",
+      "created": "2020-08-14T08:53:35Z",
+      "host": "compute1.k2.ericsson.se",
+      "az": "az01",
+      "instance_name": "instance-00000001",
+      "tenant_id": "e2f6167208e640a7971bd6d1032107de",
+      "networks": "test-net1=192.168.1.12"
+    },
+    {
+      "id": "17dbe9ad-e8d0-46b7-b922-eb61280f9a47",
+      "name": "test2",
+      "status": "SHUTOFF",
+      "power_state": "4",
+      "flavor": "test",
+      "created": "2020-08-14T10:10:38Z",
+      "host": "compute1.k2.ericsson.se",
+      "az": "az01",
+      "instance_name": "instance-00000007",
+      "tenant_id": "e2f6167208e640a7971bd6d1032107de",
+      "networks": "test-net1=192.168.1.14"
+    },
+    {
+      "id": "082f165e-f4a6-4d2b-af15-9a1a7c206da1",
+      "name": "test3",
+      "status": "ACTIVE",
+      "power_state": "1",
+      "flavor": "test",
+      "created": "2020-08-19T02:49:50Z",
+      "host": "compute1.k2.ericsson.se",
+      "az": "az01",
+      "instance_name": "instance-0000000a",
+      "tenant_id": "e2f6167208e640a7971bd6d1032107de",
+      "networks": "test-net1=10.1.1.12"
+    },
+    {
+      "id": "671768c1-02cc-4207-932a-6809ef320e03",
+      "name": "test4",
+      "status": "SHUTOFF",
+      "power_state": "4",
+      "flavor": "test",
+      "created": "2020-08-19T02:57:22Z",
+      "host": "compute1.k2.ericsson.se",
+      "az": "az01",
+      "instance_name": "instance-0000000d",
+      "tenant_id": "e2f6167208e640a7971bd6d1032107de",
+      "networks": "test-net1=192.168.1.15,10.1.1.13"
+    }
+  ],
+  "aggregate": [
+    {
+      "availability_zone": "az01",
+      "hosts": [
+        "compute1.k2.ericsson.se"
+      ],
+      "name": "azone"
+    }
+  ],
+  "compute_info": [
+    {
+      "ID": 1,
+      "Hypervisor Hostname": "compute1.k2.ericsson.se",
+      "Hypervisor Type": "QEMU",
+      "Host IP": "192.168.31.23",
+      "State": "up",
+      "vCPUs Used": 16,
+      "vCPUs": 48,
+      "Memory MB Used": 16896,
+      "Memory MB": 257707,
+      "Free Disk": 291,
+      "Total Disk": 360
+    }
+  ],
+  "tenants": [
+    {
+      "ID": "b5300abfeaf0474797de14690fb4bb99",
+      "Name": "service"
+    },
+    {
+      "ID": "c069c7911e2444d59124155ef43ea2f2",
+      "Name": "autotestpro"
+    },
+    {
+      "ID": "e2f6167208e640a7971bd6d1032107de",
+      "Name": "admin"
+    }
+  ],
+  "volume": []
+}

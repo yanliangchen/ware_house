@@ -1,0 +1,4 @@
+FROM centos:centos8
+COPY ../relation_config/requirement.txt /
+RUN yum install python3 && pip3 install virtualenv
+

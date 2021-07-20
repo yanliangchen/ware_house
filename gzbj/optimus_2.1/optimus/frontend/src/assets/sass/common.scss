@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+// $min-height: 768px;
+// $min-width: 1340px;
+// $tab-Wdith:200px;
+// $header_top_height:38px;
+// $header_top_width:calc(100% - 180px);
+// $search-header:128px;
+// $add-content-height:40px;
+// $search-header1:79px;
+
+.custom-button{
+    color: #fff;
+    background-color: #3f51b5 !important;
+    display: inline-block;
+    margin: 0 !important;
+    height: 48px !important;
+}
+
+.hand{
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none !important;
+    color: #1890ff;
+    &:hover{
+        color: #40a9ff !important;
+    }
+}
+
+
+/*重置matrial input样式*/
+.md-field{
+	border:1px solid #fff;
+	border-radius: 3.5px;
+}
+
+.md-field label{
+	padding-left: 10px;
+	color: #595959 !important;
+}
+.md-field .md-input::-webkit-input-placeholder{
+    font-size: 14px !important;
+}
+// .md-input:focus {
+// 	.md-field{
+// 		border: 3px solid red !important;
+//         border-radius: 5px;
+// 	}
+// }
+
+/*重置iview tab样式*/
+.ivu-tabs-nav .ivu-tabs-tab-active{
+    color: #465AB0 !important;
+    font-weight: bold !important;
+}
+.ivu-tabs-ink-bar{
+    background-color: #465AB0 !important;
+}
+
+/*重置iview select样式*/
+.ivu-select-selection-focused, .ivu-select-selection:hover{
+    border-color: #465AB0 ;
+}
+
+/*重置iview button样式*/
+.ivu-btn{
+    padding: 4px 15px 5px !important;
+}
+
+.ivu-btn-error{
+    background-color: #cf1322 !important;
+    border-color: #cf1322 !important;
+}
+.ivu-btn-error.active, .ivu-btn-error:active,.ivu-btn-error:hover{
+    background-color: #ff4d4f !important;
+    border-color: #ff4d4f !important;
+}
+
+.ivu-btn-table{
+    padding: 3px 11px 5px !important;
+}
+
+/*重置iview modal样式*/
+.vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ivu-modal {
+      top: 0;
+    }
+  }
+.ivu-modal-header,.ivu-modal-footer{
+    display: none;
+}
+
+
+.ivu-modal{
+    .ivu-modal-close{
+        margin-top: -4px;
+        i{
+            color: #fff;
+        }
+    }
+    .ivu-modal-body{
+        padding: 0  !important;
+        .title{
+            color: white;
+            height: 35px;
+            line-height: 35px;
+            // background: #4259C1;
+            background-image: linear-gradient(to right, #4259C1 , #354aa8);
+            border-radius: 5px 5px 0 0 ;
+            padding-left: 10px;
+        }
+        .content{
+            padding: 0 16px;
+        }
+        .soltFooter{
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; 
+            border-top: 1px solid #ddd;
+            padding-top:1px;
+            padding-right: 10px;
+        }
+    }
+}
+.deleteModal{
+    .ivu-modal{
+      .ivu-modal-close{
+        display: none;
+      }
+      .ivu-modal-body{
+        .icon{
+          width: 65px;
+          padding-left: 30px;
+          font-weight: 900;
+          float: left;
+          line-height: 45px;
+        }
+        .errMsg{
+          width: calc(100% - 65px);
+          height: 100%;    
+          margin:30px 0 15px 65px;
+          padding-right: 30px;
+          div:nth-child(1){
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 500;
+            font-size: 16px;
+            width: 100%;
+            line-height: 45px;
+          }
+          div:nth-child(2){
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 14px;
+            width: 100%;
+          }
+        }
+      }
+    }
+}
+
+
+/*重置element-ui input样式*/
+.ivu-input:hover{
+    border-color: #465AB0 ;
+}
+
+.el-table-column--selection .cell{
+    padding-left: 10px;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background-color: #465AB0;
+    border-color: #465AB0;
+}
+.el-checkbox__inner:hover{
+    border-color: #465AB0; 
+}
+
+/*重置element-ui table样式*/
+.el-table th.gutter{
+    display: table-cell!important;
+ }
+.el-table td, .el-table th{
+    height: 40px;
+    padding: 0;
+}
+.el-table--enable-row-transition .el-table__body td{
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+.el-table td, .el-table th.is-leaf{
+    border-bottom: 1.1px solid #EBEEF5 !important;
+}
+.el-tooltip__popper {
+    max-width: 400px !important;
+}
+.el-table thead  td,.el-table thead  th{
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    color: rgb(66, 65, 65) !important;
+}
+
+.warning-row {
+    background: #fff !important;
+}
+.success-row {
+    background: #f5f7fa !important;
+}
+
+/*重置element-ui form样式*/
+.el-form-item{
+    margin-bottom: 16px !important;
+    .el-form-item__content{
+        .el-input{
+            width: 100%;
+        }
+    }
+}
+
+/*重置element-ui 抽屉样式*/
+.ivu-drawer-wrap{
+    position: relative;
+    .ivu-drawer-header{
+        display: none;
+    }
+    .ivu-drawer-body{
+        height: 100% !important;
+    }
+    .buttonBox{
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+    }
+}
+
+/*vxe-table 样式重置*/
+.vxe-table td,.vxe-table th{
+    height: 40px !important;
+    padding: 0 !important;
+    line-height: 40px !important;
+}
+.vxe-table .vxe-table--header-wrapper{
+    background: rgb(230, 233, 242) !important;
+    color: rgb(140, 140, 140) !important;
+    th{
+        line-height: 36px !important;
+    }
+}
+.vxe-header--column{
+    vertical-align: middle !important;
+}
+.vxe-cell--filter{
+    margin: 2px 0 0 5px !important;
+}
+.specialButton{
+    margin-right: 10px;
+}
+.specialButton1{
+    margin: 5px;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.specialInput{
+    margin:10px;width:150px
+}
+.ivu-checkbox-group{
+    margin: 10px 0;
+}
+.ivu-checkbox-group-item{
+    display: block;
+    margin-bottom: 7px;
+    .ivu-checkbox{
+        margin:0 5px 0 10px;
+    }
+}
+
+
+.md-field.md-theme-default:before{
+    background: rgba(255,255,255,0) !important;
+    .md-field{
+        border: 2px solid #fff;
+    }
+}
+.md-field.md-theme-default:after{
+    background: rgba(255,255,255,0) !important;
+}
+.md-error{
+    color: red;
+    top: 65px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.md-field .md-error{
+    opacity: 1 !important;
+}

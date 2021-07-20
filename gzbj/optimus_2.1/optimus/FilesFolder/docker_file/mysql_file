@@ -1,0 +1,3 @@
+FROM mysql:5.6.51
+COPY ../../../relation_config/optimus.sql /tmp/
+RUN mysql -u root -p$MYSQL_ROOT_PASSWORD -e "create database if not exists optimus" && mysql -u root -p$MYSQL_ROOT_PASSWORD -e "source /tmp/optimus.sql"

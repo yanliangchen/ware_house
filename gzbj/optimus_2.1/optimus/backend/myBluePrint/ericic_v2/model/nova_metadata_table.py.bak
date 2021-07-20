@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# @File  : nova_metadata_table.py
+# @Author: gaofzhan
+# @Email: gaofeng.a.zhang@ericssoin.com
+# @Date  : 2020/12/3 11:10
+# @Desc  : this table's info comes from nova list --field name,power_state,task_state,flavor,os-extended-volumes:volumes_attached,networks,host,created,image,instance_name,tenant_id,metadata --all-tenants
+from sqlalchemy import Column, String, Integer
+from backend.Model.connection import MyBase
+
+
+class NovaMetaDateModel(MyBase):
+    __tablename__ = 'nova_metadata_table'
+
+    id = Column(String(50), primary_key=True)
+    item_id = Column(String(50), )
+    metadata = Column(String(50), )
+    dc_id = Column(String(50), )
+    timestamp = Column(Integer(), nullable=False)
+
+    # version = Column(Integer(), nullable=False, default=0)
+    def __init__(self, _id, item_id, metadata, dc_id, timestamp):
+        self.id = _id
+        self.item_id = item_id
+        self.metadata = metadata
+        self.dc_id = dc_id
+        self.timestamp = timestamp

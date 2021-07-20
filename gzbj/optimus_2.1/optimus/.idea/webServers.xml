@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="494687c9-13f1-452a-842e-1c6923348b25" name="bj_itte" url="http://127.0.0.1">
+        <fileTransfer host="127.0.0.1" port="9060" rootFolder="/optimus_2.1_yl_test" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="9060" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
